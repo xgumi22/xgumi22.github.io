@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umak</title>
+
+    <!--  Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="assets/image/header/umak.png" type="image/x-icon">
+
+    <style>
+      @font-face {
+        font-family: "Marcellus";
+        src: url("fonts/Marcellus-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "MontsReg";
+        src: url("fonts/Montserrat-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "MontsBlack";
+        src: url("fonts/Montserrat-Black.ttf");
+      }
+
+      @font-face {
+        font-family: "MontsBold";
+        src: url("fonts/Montserrat-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: "MontsExBold";
+        src: url("fonts/Montserrat-ExtraBold.ttf");
+      }
+
+      body {
+        font-family: "MontsReg" !important;
+        overflow-x: hidden; 
+      }
+
+      #navFixed {
+        background-color: rgba(17, 28, 78, 0); 
+        transition: background-color 1.5s ease-in; 
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+      }
+
+      .custom-placeholder::placeholder {
+        color: white;
+      }
+
+      
+
+    </style>
+    
+</head>
+<body>
+
+  <div class="container-fluid p-0">
+
+    <div class="w-100 d-flex justify-content-between p-0 ps-5 pt-2" style="position: fixed" id="navFixed">            
+          <h3 class="text-light fs-4" style="font-family: Marcellus; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"><img src="assets/image/header/umak.png" style="width: 4%; margin: 0;"  alt=""> UNIVERSITY OF MAKATI</h3>
+          <div class="d-flex float-end">
+            <a href="#" class="btn text-light fw-bold" style="font-family: MontsReg; font-size: .9rem; margin-bottom: 0;">HOME</a>
+            <a href="#" class="btn text-light fw-bold" style="font-family: MontsReg; font-size: .9rem; margin-bottom: 0;">ABOUT</a>
+            <a href="#" class="btn text-light fw-bold" style="font-family: MontsReg; font-size: .9rem; margin-bottom: 0;">PAGE</a>
+            <button class="btn text-light me-3" style="margin-top: -5%;"><i class="fas fa-search" style="font-size: .9rem;"></i></button>
+          </div>
+    </div>
+
+    <div class="row" id="header" style="width: 100vw;">
+      <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div style="background-image: url('assets/image/header/usceb.jpeg'); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center top; width: 100vw;">
+          <div class="d-flex align-items-center flex-column pt-5" style="height: 100vh;">
+          <!-- <h1 class="mt-5">LARGE LOGO</h1> -->
+          <img src="assets/image/header/umaksclogo.png" style="width: 10%;" class="mt-1 bg-light rounded-circle p-2" alt="">
+          <h1 class="text-light" style="font-family: Marcellus; font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); ">UNIVERSITY STUDENT COUNCIL</h1>
+          <span class="text-body-light text-light fs-5" style="font-family: MontsReg; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);">A.Y. 2023 - 2024</span>
+
+          
+        </div>
+        
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row" style="width: 100vw;">
+      <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+
+        <span class="fs-3 mt-3">Welcome to the <span class="fw-bold" style="color: rgb(6, 13, 48)">University Student Council</span></span>
+        <span class="fs-3">The highest governing student organization in the <span class="fw-bold" style="color: rgb(6, 13, 48)">University of Makati</span></span>
+        <p class="fs-4 mt-4">You are currently on the website of the <span class="fw-bold" style="color: rgb(6, 13, 48)">Audit and Property</span></p>
+
+        <div class="bg-secondary-subtle mt-5 p-5 pt-3 d-flex align-items-center justify-content-center flex-column" style="width: 100vw;">
+          <h3 class="fs-2 fw-bold mt-5" style="font-family: 'MontsBold'; color: rgb(6, 13, 48)">THE INVENTORY</h3>
+          <p>Search through the items and property owned by the University Student Council</p>
+          
+            <div class="w-75 d-flex align-items-center justify-content-center flex-column mt-4">
+              <div class="input-group d-flex w-100">
+                <input type="text" class="p-3 border border-2 border-secondary " style="width: 92%;" placeholder="Enter the name or control number of the item or property">
+                <button class="btn btn-lg text-light rounded-0 ps-4 pe-4" type="button" style="background-color: rgb(6, 19, 89);"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+
+            <hr class="w-75">
+
+            <p class="w-50 text-center" >If you do not know the name or the control number of the item or property you are looking for, you may check manually the <span class="fw-bold" style="color: rgb(6, 13, 48)">Inventory Library</span></p>
+            <a href="" class="text-light nav-link p-3 border border-dark border-2 mb-3" style="background: rgb(6, 19, 89)">Visit the <span class="fw-bold">Inventory</span></a>
+           
+        </div>
+
+
+      </div>
+      
+    </div>
+
+    <div class="row" style="width: 100vw;">
+      <div class="col col-xl-1 col-lg-11 col-md-11 col-sm-11"></div>
+      <div class="col col-xl-10 col-lg-10 col-md-10 col-sm-10">
+        <h3 class="fs-2 mt-5" style="color: rgb(6, 13, 48); font-family: 'MontsExBold';">AUDIT AND PROPERTY SYSTEM</h3>
+        <p class="fs-5 mb-5">Explore more about the Audit and Property System to help you, Herons, in processes.</p>
+
+        <div class="row">
+
+          <!-- background: linear-gradient(to bottom, rgba(107, 120, 249, 1), transparent, transparent); -->
+          
+          <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none">
+              <div class="card" style="height: 275px; width: 90%; background-image: url('assets/image/audit/procedure.webp'); background-size: 100% 100%;">
+                <div class="text-light d-flex justify-content-end flex-column pe-1" style="width: 100%; height: 100%; background: rgba(6, 19, 89, .5);">
+                  <h4 class="ms-4 fs-3" style="font-family: 'MontsBold';">PROCEDURES</h4>
+                  <h5 class="ms-4 fs-5 mb-5">Know the procedure step-by-step process of borrowing items and property.</h5> 
+                </div>
+              </div>
+            </a>
+          </div>
+        
+
+        
+          <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none">
+              <div class="card" style="height: 275px; width: 90%; background-image: url('assets/image/audit/request.jpg'); background-size: 100% 100%;">
+                <div class="text-light d-flex justify-content-end flex-column pe-1" style="width: 100%; height: 100%; background: rgba(6, 19, 89, .5);">
+                  <h4 class="ms-4 fs-3" style="font-family: 'MontsBold';">REQUEST FORMS</h4>
+                  <h4 class="ms-4 fs-5 mb-5">Download the template copy of request forms and other documents.</h4> 
+                </div>
+              </div>
+            </a>
+          </div>
+        
+          
+
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+            <a href="guidelines.html" class="text-decoration-none">
+              <div class="card" style="height: 275px; width: 90%; background-image: url('assets/image/audit/guidelines.webp'); background-size: 100% 100%;">
+                <div class="text-light d-flex justify-content-end flex-column pe-1" style="width: 100%; height: 100%; background: rgba(6, 19, 89, .5);">
+                  <h4 class="ms-4 fs-3" style="font-family: 'MontsBold';">GUIDELINES</h4>
+                  <h5 class="ms-4 fs-5 mb-5">Learn the set guidelines for borrowing items and property.</h5> 
+                </div>
+              </div>
+            </a>
+          </div>
+        
+
+        
+          <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none">
+              <div class="card" style="height: 275px; width: 90%; background-image: url('assets/image/audit/feedback.webp'); background-size: 100% 100%;">
+                <div class="text-light d-flex justify-content-end flex-column pe-1" style="width: 100%; height: 100%; background: rgba(6, 19, 89, .5);">
+                  <h4 class="ms-4 fs-3" style="font-family: 'MontsBold';">FEEDBACK FORMS</h4>
+                  <h4 class="ms-4 fs-5 mb-5">Give us your honest thoughts and insight about our service.</h4> 
+                </div>
+              </div>
+            </a>
+          </div>
+        
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="row mt-5" style="width: 100vw; overflow: hidden;">
+      <div class="bg-secondary-subtle d-flex justify-content-center align-items-center pt-5 pb-5">
+
+        
+
+        <div class="d-flex firstFlexCredentials" style="width: 20%;">
+          <img src="assets/image/credits/pres.png" alt="" style="width: 280px; height: 250px; z-index: 1;">
+          <img src="assets/image/credits/audit.png" alt=""  style="width: 280px; height: 250px; margin-left: -50%;">
+        </div>
+
+        <div class="d-flex ms-5 me-5 centerFlexCredentials" style="z-index: 50;  text-wrap: nowrap;">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h4 class="fs-4 fw-bold" style="font-family: 'MontsBold'; color: rgb(6, 13, 48)">WITH THANKS TO:</h4>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p class="fs-5 fw-bold" style="color: rgb(6, 13, 48)">Mr. RODJAN FAT</p>
+              <span style="color: rgb(6, 13, 48); margin-top: -20px">President, USC</span>
+            </div>
+  
+            <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+              <p class="fs-5 fw-bold" style="color: rgb(6, 13, 48)">Ms. JILLIAN CORNISTA</p>
+              <span style="color: rgb(6, 13, 48); margin-top: -20px">Auditor and Property Custodian, USC</span>
+            </div>
+          </div>
+  
+          <div class="ms-3 me-3 border border-secondary" style="height: 120%"><br><br><br><br><br><br><br><br><br><br><br></div>
+  
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h4 class="fs-4 fw-bold" style="font-family: 'MontsBold'; color: rgb(6, 13, 48)">DEVELOPED BY:</h4>
+              <p class="fs-5 fw-bold" style="color: rgb(6, 13, 48)">Mr. CHESTER BUENO</p>
+              <p class="fs-5 fw-bold" style="color: rgb(6, 13, 48)">Ms. SANDY MIRAÑA</p>
+              <p class="fs-5 fw-bold" style="color: rgb(6, 13, 48)">Mr. MARTY LUMAGBAS</p>
+  
+            </div>
+        </div>
+
+      
+          <div class="d-flex lastFlexCredentials" style="width: 20%;">
+            <img src="assets/image/credits/left.png" alt="" class="imgEnd" style="width: 280px; height: 250px; z-index: 2; margin-right: -40%; ">
+            <img src="assets/image/credits/center.png" alt="" class="imgEnd"  style="width: 280px; height: 250px; z-index: 1; margin-right: -40%;">
+            <img src="assets/image/credits/right.png" alt=""  style="width: 280px; height: 250px; margin: 0;">
+          </div>
+
+          
+      </div>
+
+      </div>
+
+      <div class="row footerBanner" style="margin-top: -4.3%; width: 100vw; z-index: 100;">
+        <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div style="width: 100vw; background-image: url('assets/image/footer/umakbuilding.jpg'); background-size: cover;">
+            <div class="w-100 h-100 d-flex align-items-center flex-column pt-5" style="background: rgba(6, 19, 89, .5);">
+              <h3 class="text-light fs-3 mt-5" style="font-family: 'MontsBold';">Join the UMak Heron Community and</h3>
+              <h2 class="text-light fs-1" style="font-family: 'MontsBold';">Be a Future Builder of this Land</h2>
+
+              <div class="d-flex align-items-center mt-4 mb-5">
+                <a href="https://www.umak.edu.ph/" target="_blank" class="btn border border-3 border-light p-3 ps-4 pe-4 text-light me-4">Explore <span style="font-family: 'MontsBold';">umak.edu.ph</span></a>
+                <a href="#" class="btn border border-3 border-light p-3 ps-4 pe-4 text-light ms-4">Be a <span style="font-family: 'MontsBold';">Student Leader</span></a>
+              </div>
+
+              <div style="background: #061359;">
+
+                <div class="ps-5 pt-5 pe-5 pb-3 d-flex">
+                  <img src="assets/image/header/umak.png" style="width: 10%; height: 10%;" class="mt-5" alt="">
+                  <img src="assets/image/header/umaksclogo.png" style="width: 10%; height: 10%;" class="mt-5 bg-light rounded-circle p-2 ms-3" alt="">
+
+                  <div class="d-flex flex-column ms-3 w-50">
+                    <h3 class="text-light" style="font-family: Marcellus; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); ">UNIVERSITY STUDENT MAKATI</h3>
+                    <h1 class="text-light" style="font-family: Marcellus; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); ">UNIVERSITY STUDENT COUNCIL</h1>
+                    
+                    <p class="text-light pe-1" style="font-family: 'MontsReg'; font-size: .9rem;">The University Student Council (USC) is the highest student organization of the University of Makati (UMak). It designed activities that will surely enhance the knowledge and creativity of the UMak students, promote and protect their rights and welfare, foster spiritual brotherhood, and instill the national conciousness among them that will ultimately benefit the organization. <a href="" class="text-light text-decoration-none fw-bold">Learn More.</a></p>
+                  </div>
+
+                  <div class="border border-secondary" style="height: 200%; margin-left: 10%;"><br><br><br><br><br><br><br><br></div>
+
+                <div class="d-flex flex-column ms-5 ps-2 fs-5">
+                  <h4 class="text-light fw-bold mt-3">QUICK LINKS</h4>
+
+                  <ul class="list-unstyled mt-3">
+                    <li><a href="" class="text-light">FAQs</a></li>
+                    <li><a href="" class="text-light">AFFLIATES</a></li>
+                    <li><a href="" class="text-light">SUPPORT</a></li>
+
+                  </ul>
+                </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('header');
+      var navFixed = document.getElementById('navFixed');
+      var rect = header.getBoundingClientRect();
+    
+      if (rect.top < 0) {
+        navFixed.style.backgroundColor = 'rgba(17, 28, 78, 1)';
+      } else {
+        navFixed.style.backgroundColor = 'rgba(17, 28, 78, 0)';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+    function adjustMarginLeft() {        
+        var firstFlexCredentials = document.querySelector('.firstFlexCredentials');
+        var centerFlexCredentials = document.querySelector('.centerFlexCredentials');
+        var lastFlexCredentials = document.querySelector('.lastFlexCredentials');
+        console.log("firstFlexCredentials:", firstFlexCredentials); // Debugging statement
+        console.log("centerFlexCredentials:", centerFlexCredentials); // Debugging statement
+        console.log("lastFlexCredentials:", lastFlexCredentials); // Debugging statement
+
+        var imgEnds = document.querySelectorAll('.imgEnd');
+        console.log("imgEnd", imgEnds);// Debugging statement
+
+        var footerBanner = document.querySelector('.footerBanner');
+        console.log("footerBanner", footerBanner)// Debugging statement
+        var windowWidth = window.innerWidth;
+
+        // Check if window width is below 1400px
+        if (windowWidth < 1400) {
+
+            // Iterate over each imgEnd element and set the margin-right
+            imgEnds.forEach(function(element) {
+                element.style.marginRight = '-40%';
+            });
+
+            footerBanner.style.marginTop = '-4.3%';
+
+            firstFlexCredentials.style.marginLeft = '-20%';
+            firstFlexCredentials.classList.add('me-5');
+            centerFlexCredentials.style.marginLeft = '10%';
+            lastFlexCredentials.style.marginLeft = '-5%';
+
+        } else {
+            
+            // Iterate over each imgEnd element and set the margin-right
+            imgEnds.forEach(function(element) {
+                element.style.marginRight = '-30%';
+            });
+
+            footerBanner.style.marginTop = '-2.9%';
+
+            firstFlexCredentials.style.marginLeft = '0';
+            firstFlexCredentials.classList.remove('me-5');
+            centerFlexCredentials.style.marginLeft = '0';
+            lastFlexCredentials.style.marginLeft = '0';
+        }
+    }
+
+    // Call adjustMarginLeft on page load and window resize
+    window.addEventListener('load', adjustMarginLeft);
+    window.addEventListener('resize', adjustMarginLeft);
+
+    // Call adjustMarginLeft when DOM is ready
+    adjustMarginLeft();
+});
+
+    </script>
+</body>
+</html>
